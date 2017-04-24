@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>World of Warcraft : Legion</title>
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin=anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+		<script src="https://www.youtube.com/iframe_api"></script>
+
+	</head>
+
+
+
+
+
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Brand</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="news.html">News</a></li>
+
+		       	<li class="dropdown active">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raids <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li class ="active"><a href="nightmare.html">Cauchemar d'Emeraude</a></li>
+		            <li><a href="nighthold.html">Palais Sacrenuit</a></li>
+		            <li><a href="trial.html">Jugement des Valeureux</a></li>
+		            <li><a href="sargeras.html">Tombe de Sargeras</a></li>
+		          </ul>
+		        </li>
+
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<main>
+			<div class="jumbotron">
+				<div class="container">
+					<select class="nightmare-video-selector">
+						<option value="nythendra" id="nythendra">Nythendra</option>
+						<option value="ursoc" id="ursoc">Ursoc</option>
+						<option value="elerethe" id="elerethe">Elerethe</option>
+						<option value="ilgynoth" id="ilgynoth">Il'gynoth</option>
+						<option value="dragons" id="dragons">Dragons du cauchemar</option>
+						<option value="cenarius" id="cenarius">Cénarius</option>
+						<option value="xavius" id="xavius">Xavius</option>
+					</select>
+
+
+				<!-- VIDEOS NYTHENDRA -->
+						<div class="navigation-nythendra">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#nythendra-nm" aria-controls="nythendra-nm" role="tab" data-toggle="tab">Nythendra NM</a></li>
+								<li role="presentation"><a href="#nythendra-hm" aria-controls="nythendra-hm" role="tab" data-toggle="tab">Nythendra HM</a></li>
+								<li role="presentation"><a href="#nythendra-mm" aria-controls="nythendra-mm" role="tab" data-toggle="tab">Nythendra MM</a></li>
+							</ul>
+						</div>
+
+						<div class="nythendra">
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="nythendra-nm">
+										<iframe class="nythendra-nm" src="https://www.youtube.com/embed/rKKP50hPoxk"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="nythendra-hm">
+										<iframe class="nythendra-hm" src="https://www.youtube.com/embed/k1QBWWHFXuQ"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="nythendra-mm">
+									<iframe class="nythendra-mm" src="https://www.youtube.com/embed/H0eS8WE49T4"></iframe>
+								</div>
+						  </div>
+						</div>
+				<!-- VIDEOS NYTHENDRA FIN -->
+
+				<!-- VIDEOS URSOC -->
+						<div class="navigation-ursoc">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#ursoc-nm" aria-controls="ursoc-nm" role="tab" data-toggle="tab">Ursoc NM</a></li>
+								<li role="presentation"><a href="#ursoc-hm" aria-controls="ursoc-hm" role="tab" data-toggle="tab">Ursoc HM</a></li>
+								<li role="presentation"><a href="#ursoc-mm" aria-controls="ursoc-mm" role="tab" data-toggle="tab">Ursoc MM</a></li>
+							</ul>
+						</div>
+
+						<div class="ursoc">
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="ursoc-nm">
+										<iframe class="ursoc-nm" src="https://www.youtube.com/embed/1iMfFK1UthY"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="ursoc-hm">
+										<iframe class="ursoc-hm" src="https://www.youtube.com/embed/K84ZpRwlDv8"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="ursoc-mm">
+									<iframe class="ursoc-mm" src="https://www.youtube.com/embed/aVLz5Nuv86k"></iframe>
+								</div>
+						  </div>
+						</div>
+				<!-- VIDEOS URSOC FIN -->
+
+				<!-- VIDEOS ELERETHE -->
+						<div class="navigation-elerethe">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#elerethe-nm" aria-controls="elerethe-nm" role="tab" data-toggle="tab">Elerethe NM</a></li>
+								<li role="presentation"><a href="#elerethe-hm" aria-controls="elerethe-hm" role="tab" data-toggle="tab">Elerethe HM</a></li>
+								<li role="presentation"><a href="#elerethe-mm" aria-controls="elerethe-mm" role="tab" data-toggle="tab">Elerethe MM</a></li>
+							</ul>
+						</div>
+
+						<div class="elerethe">
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="elerethe-nm">
+										<iframe class="elerethe-nm" src="https://www.youtube.com/embed/0_DmGxQcLLA"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="elerethe-hm">
+										<iframe class="elerethe-hm" src="https://www.youtube.com/embed/0zNI_41Pkdo"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="elerethe-mm">
+									<iframe class="elerethe-mm" src="https://www.youtube.com/embed/6LoG0SKGr5w"></iframe>
+								</div>
+						  </div>
+						</div>
+				<!-- VIDEOS ELERETHE FIN -->
+
+				<!-- VIDEOS ILGYNOTH -->
+						<div class="navigation-ilgynoth">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#ilgynoth-nm" aria-controls="ilgynoth-nm" role="tab" data-toggle="tab">Il'gynoth NM</a></li>
+								<li role="presentation"><a href="#ilgynoth-hm" aria-controls="ilgynoth-hm" role="tab" data-toggle="tab">Il'gynoth HM</a></li>
+								<li role="presentation"><a href="#ilgynoth-mm" aria-controls="ilgynoth-mm" role="tab" data-toggle="tab">Il'gynoth MM</a></li>
+							</ul>
+						</div>
+
+						<div class="ilgynoth">
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="ilgynoth-nm">
+										<iframe class="ilgynoth-nm" src="https://www.youtube.com/embed/92xokhw3AV8"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="ilgynoth-hm">
+										<iframe class="ilgynoth-hm" src="https://www.youtube.com/embed/VnkVhkvgXeE"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="ilgynoth-mm">
+									<iframe class="ilgynoth-mm" src="https://www.youtube.com/embed/9fuCl1kS5xE"></iframe>
+								</div>
+						  </div>
+						</div>
+				<!-- VIDEOS ILGYNOH FIN -->
+
+				<!-- VIDEOS DRAGONS -->
+						<div class="navigation-dragons">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#dragons-nm" aria-controls="dragons-nm" role="tab" data-toggle="tab">Dragons du Cauchemar NM</a></li>
+								<li role="presentation"><a href="#dragons-hm" aria-controls="dragons-hm" role="tab" data-toggle="tab">Dragons du Cauchemar HM</a></li>
+								<li role="presentation"><a href="#dragons-mm" aria-controls="dragons-mm" role="tab" data-toggle="tab">Dragons du Cauchemar MM</a></li>
+							</ul>
+						</div>
+
+						<div class="dragons">
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="dragons-nm">
+										<iframe class="dragons-nm" src="https://www.youtube.com/embed/RH1lhfVykTE"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="dragons-hm">
+										<iframe class="dragons-hm" src="https://www.youtube.com/embed/fWtHxI9awlc"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="dragons-mm">
+									<iframe class="dragons-mm" src="https://www.youtube.com/embed/SuXmyuPKLeM"></iframe>
+								</div>
+						  </div>
+						</div>
+				<!-- VIDEOS DRAGONS FIN -->
+
+				<!-- VIDEOS CENARIUS -->
+						<div class="navigation-cenarius">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#cenarius-nm" aria-controls="cenarius-nm" role="tab" data-toggle="tab">Cenarius NM</a></li>
+								<li role="presentation"><a href="#cenarius-hm" aria-controls="cenarius-hm" role="tab" data-toggle="tab">Cenarius HM</a></li>
+								<li role="presentation"><a href="#cenarius-mm" aria-controls="cenarius-mm" role="tab" data-toggle="tab">Cenarius MM</a></li>
+							</ul>
+						</div>
+
+						<div class="cenarius">
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="cenarius-nm">
+										<iframe class="cenarius-nm" src="https://www.youtube.com/embed/ZwQHctY5gMA"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="cenarius-hm">
+										<iframe class="cenarius-hm" src="https://www.youtube.com/embed/NQKmjz7nPZc"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="cenarius-mm">
+									<iframe class="cenarius-mm" src="https://www.youtube.com/embed/iBRTwdQyVng"></iframe>
+								</div>
+						  </div>
+						</div>
+				<!-- VIDEOS CENARIUS FIN -->
+
+				<!-- VIDEOS XAVIUS -->
+						<div class="navigation-xavius">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#xavius-nm" aria-controls="xavius-nm" role="tab" data-toggle="tab">Xavius NM</a></li>
+								<li role="presentation"><a href="#xavius-hm" aria-controls="xavius-hm" role="tab" data-toggle="tab">Xavius HM</a></li>
+								<li role="presentation"><a href="#xavius-mm" aria-controls="xavius-mm" role="tab" data-toggle="tab">Xavius MM</a></li>
+							</ul>
+						</div>
+
+						<div class="xavius">
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="xavius-nm">
+										<iframe class="xavius-nm" src="https://www.youtube.com/embed/4slV1Byr2Dc"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="nythendra-hm">
+										<iframe class="xavius-hm" src="https://www.youtube.com/embed/ge5Jt_q4_RU"></iframe>
+								</div>
+						    <div role="tabpanel" class="tab-pane" id="xavius-mm">
+									<iframe class="xavius-mm" src="https://www.youtube.com/embed/zowdjsXhaAs"></iframe>
+								</div>
+						  </div>
+						</div>
+				<!-- VIDEOS XAVIUS FIN -->
+
+				<div class="strat">
+					<h2><button class="strategie">Découvrez la strat' ici</button></h2>
+					<section id="strat-nythendra"></section>
+				</div>
+			</div> <!-- CONTAINER FIN -->
+		</div> <!-- JUMBOTRON FIN -->
+
+		</main>
+
+	</body>
+
+
+<script>
+	$(document).ready(function(){
+
+		$('#strat-nythendra').hide();
+
+		$('.navigation-nythendra').show();
+		$('.navigation-ursoc').hide();
+		$('.navigation-elerethe').hide();
+		$('.navigation-ilgynoth').hide();
+		$('.navigation-dragons').hide();
+		$('.navigation-cenarius').hide();
+		$('.navigation-xavius').hide();
+
+		$('.nythendra').show();
+		$('.ursoc').hide();
+		$('.elerethe').hide();
+		$('.ilgynoth').hide();
+		$('.dragons').hide();
+		$('.cenarius').hide();
+		$('.xavius').hide();
+
+
+		$('.nightmare-video-selector').change(function(){
+        if($('.nightmare-video-selector').val() == 'nythendra') {
+					$('.navigation-nythendra').show();
+					$('.navigation-ursoc').hide();
+					$('.navigation-elerethe').hide();
+					$('.navigation-ilgynoth').hide();
+					$('.navigation-dragons').hide();
+					$('.navigation-cenarius').hide();
+					$('.navigation-xavius').hide();
+
+					$('.nythendra').show();
+					$('.ursoc').hide();
+					$('.elerethe').hide();
+					$('.ilgynoth').hide();
+					$('.dragons').hide();
+					$('.cenarius').hide();
+					$('.xavius').hide();
+        }
+    });
+
+		$('.nightmare-video-selector').change(function(){
+        if($('.nightmare-video-selector').val() == 'ursoc') {
+					$('.navigation-nythendra').hide();
+					$('.navigation-ursoc').show();
+					$('.navigation-elerethe').hide();
+					$('.navigation-ilgynoth').hide();
+					$('.navigation-dragons').hide();
+					$('.navigation-cenarius').hide();
+					$('.navigation-xavius').hide();
+
+					$('.nythendra').hide();
+					$('.ursoc').show();
+					$('.elerethe').hide();
+					$('.ilgynoth').hide();
+					$('.dragons').hide();
+					$('.cenarius').hide();
+					$('.xavius').hide();
+        }
+    });
+
+		$('.nightmare-video-selector').change(function(){
+        if($('.nightmare-video-selector').val() == 'elerethe') {
+					$('.navigation-nythendra').hide();
+					$('.navigation-ursoc').hide();
+					$('.navigation-elerethe').show();
+					$('.navigation-ilgynoth').hide();
+					$('.navigation-dragons').hide();
+					$('.navigation-cenarius').hide();
+					$('.navigation-xavius').hide();
+
+					$('.nythendra').hide();
+					$('.ursoc').hide();
+					$('.elerethe').show();
+					$('.ilgynoth').hide();
+					$('.dragons').hide();
+					$('.cenarius').hide();
+					$('.xavius').hide();
+        }
+    });
+
+
+		$('.nightmare-video-selector').change(function(){
+		      if($('.nightmare-video-selector').val() == 'ilgynoth') {
+					$('.navigation-nythendra').hide();
+					$('.navigation-ursoc').hide();
+					$('.navigation-elerethe').hide();
+					$('.navigation-ilgynoth').show();
+					$('.navigation-dragons').hide();
+					$('.navigation-cenarius').hide();
+					$('.navigation-xavius').hide();
+
+					$('.nythendra').hide();
+					$('.ursoc').hide();
+					$('.elerethe').hide();
+					$('.ilgynoth').show();
+					$('.dragons').hide();
+					$('.cenarius').hide();
+					$('.xavius').hide();
+		      }
+		  });
+
+		$('.nightmare-video-selector').change(function(){
+				if($('.nightmare-video-selector').val() == 'dragons') {
+					$('.navigation-nythendra').hide();
+					$('.navigation-ursoc').hide();
+					$('.navigation-elerethe').hide();
+					$('.navigation-ilgynoth').hide();
+					$('.navigation-dragons').show();
+					$('.navigation-cenarius').hide();
+					$('.navigation-xavius').hide();
+
+					$('.nythendra').hide();
+					$('.ursoc').hide();
+					$('.elerethe').hide();
+					$('.ilgynoth').hide();
+					$('.dragons').show();
+					$('.cenarius').hide();
+					$('.xavius').hide();
+				}
+		});
+
+
+		$('.nightmare-video-selector').change(function(){
+				if($('.nightmare-video-selector').val() == 'cenarius') {
+					$('.navigation-nythendra').hide();
+					$('.navigation-ursoc').hide();
+					$('.navigation-elerethe').hide();
+					$('.navigation-ilgynoth').hide();
+					$('.navigation-dragons').hide();
+					$('.navigation-cenarius').show();
+					$('.navigation-xavius').hide();
+
+					$('.nythendra').hide();
+					$('.ursoc').hide();
+					$('.elerethe').hide();
+					$('.ilgynoth').hide();
+					$('.dragons').hide();
+					$('.cenarius').show();
+					$('.xavius').hide();
+				}
+		});
+
+
+$('.nightmare-video-selector').change(function(){
+		if($('.nightmare-video-selector').val() == 'xavius') {
+			$('.navigation-nythendra').hide();
+			$('.navigation-ursoc').hide();
+			$('.navigation-elerethe').hide();
+			$('.navigation-ilgynoth').hide();
+			$('.navigation-dragons').hide();
+			$('.navigation-cenarius').hide();
+			$('.navigation-xavius').show();
+
+			$('.nythendra').hide();
+			$('.ursoc').hide();
+			$('.elerethe').hide();
+			$('.ilgynoth').hide();
+			$('.dragons').hide();
+			$('.cenarius').hide();
+			$('.xavius').show();
+		}
+});
+
+	$('.strategie').click(function(){
+		$.getScript("js/jsReader.js");
+		$('#strat-nythendra').show();
+		$('.strategie').prop('disabled',true);
+	});
+
+});
+</script>
+
+
+</html>

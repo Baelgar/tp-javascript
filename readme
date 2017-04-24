@@ -1,0 +1,50 @@
+Author : ENFOUX Kévin
+
+Project : HTML5 / CSS3 / JQuery JSON
+
+License : World of Warcraft boss encounters videos
+Install :
+
+images utilisées dans le cadre du tp.
+
+Fonctionnalités :
+	Accueil :
+		- Slide
+		- Hover sur flexbox + redirection via jquery
+	Raids :
+		- Selection des boss via select + onglets pour chaque difficulté
+		- Bouton pour affichage de la stratégie par appel d'un fichier JSON
+
+Bugs :
+	Tout le contenu du dropdown passe en .active (heritage du css de la classe .active) lorsqu'on sélection un raid
+
+Pas réussi à remplacer Brand dans le navbar par un logo de wow
+
+
+Retour client :
+Legend : 	(y) --> points positifs
+			/!\ --> points négatifs
+			//** **\\ --> commentaire Kévin
+
+--------------------------------------
+
+Responsivité :
+				- (y) La page s'adapte correctement aux différentes tailles
+				- /!\ Le premier article dans la section news empiète sur la navbar   //** Problème corrigé **\\
+
+
+Visuel :
+				- /!\ Seule la page home possède un background (slider) --> les autres pages paraissent délaissées / vides
+				- (y) Le slider s'intègre bien au design du site
+				- /!\ Les images séléctionnées sont pixélisées		//** Pas d'images assez grandes trouvées, j'ai du adapté un peu pour le coup**\\
+				- (y) La page home défini un style qui concorde bien avec le sujet du blog
+
+Utilisation :
+				- /!\ Page raid scrollable sans contenu			//** Ajout d'une stratégie pour le boss visible en cliquant sur le bouton sous la vidéo **\\
+				- /!\ La page news est lente au chargement sans raison apparente   //** Problème qui semble résolu **\\
+
+
+Amélioration :
+				- Controle du slide	--> frustrant quand de devoir attendre une rotation complète quand une image nous intéresse   //** Ajout de points de controle dans la caption**\\
+				- La page raid est bien vide, peut être rajouté une séléction des donjons par tranche de niveaux   //** Ajout d'une stratégie pour le boss visible en cliquant sur le bouton sous la vidéo **\\
+				- Rajouter une déscription des donjons pour remplir un peu  //** Ajout d'une stratégie pour le boss visible en cliquant sur le bouton sous la vidéo **\\
