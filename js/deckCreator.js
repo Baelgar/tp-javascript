@@ -44,7 +44,7 @@
 
                 target.className = 'dropper'; // Application du style par défaut
 
-                
+
                 clonedElement = target.appendChild(clonedElement); // Ajout de l'élément cloné à la zone de drop actuelle
 
 
@@ -63,7 +63,7 @@
                 dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
 
                 draggedElement.parentNode.removeChild(draggedElement); // Suppression de l'élément d'origine
-                inputHidden.parentNode.removeChild(inputHidden);
+    
 
 
               //  document.getElementById('toto').removeChild(document.getElementsByTagName('div')
