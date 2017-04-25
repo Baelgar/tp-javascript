@@ -46,7 +46,7 @@
                 dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
 
                 draggedElement.parentNode.removeChild(draggedElement); // Suppression de l'élément d'origine
-
+                //draggedElement.parentNode.remove();
             });
 
         }
