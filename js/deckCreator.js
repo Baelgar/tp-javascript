@@ -6,9 +6,9 @@
 
         applyDragEvents: function(element) {
 
-            element.card = true;
+            element.draggable = true;
 
-            var dndHandler = this;
+            var dndHandler = this; // Cette variable est nécessaire pour que l'événement « dragstart » ci-dessous accède facilement au namespace « dndHandler »
 
             element.addEventListener('dragstart', function(e) {
                 dndHandler.draggedElement = e.target; // On sauvegarde l'élément en cours de déplacement
@@ -21,12 +21,11 @@
 
             dropper.addEventListener('dragover', function(e) {
                 e.preventDefault(); // On autorise le drop d'éléments
-                this.className = 'cardPile drop_hover';
+                this.className = 'dropper drop_hover'; // Et on applique le style adéquat à notre zone de drop quand un élément la survole
             });
 
             dropper.addEventListener('dragleave', function() {
-
-                this.className = 'cardPile'; // On revient au style de base lorsque l'élément quitte la zone de drop
+                this.className = 'dropper'; // On revient au style de base lorsque l'élément quitte la zone de drop
             });
 
             var dndHandler = this; // Cette variable est nécessaire pour que l'événement « drop » ci-dessous accède facilement au namespace « dndHandler »
@@ -37,11 +36,11 @@
                     draggedElement = dndHandler.draggedElement, // Récupération de l'élément concerné
                     clonedElement = draggedElement.cloneNode(true); // On créé immédiatement le clone de cet élément
 
-                while (target.className.indexOf('cardPile') == -1) { // Cette boucle permet de remonter jusqu'à la zone de drop parente
+                while (target.className.indexOf('dropper') == -1) { // Cette boucle permet de remonter jusqu'à la zone de drop parente
                     target = target.parentNode;
                 }
 
-                target.className = 'cardPile'; // Application du style par défaut
+                target.className = 'dropper'; // Application du style par défaut
 
                 clonedElement = target.appendChild(clonedElement); // Ajout de l'élément cloné à la zone de drop actuelle
                 dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
@@ -54,14 +53,14 @@
 
     };
 
-    var elements = document.querySelectorAll('.card'),
+    var elements = document.querySelectorAll('.draggable'),
         elementsLen = elements.length;
 
     for (var i = 0; i < elementsLen; i++) {
         dndHandler.applyDragEvents(elements[i]); // Application des paramètres nécessaires aux éléments déplaçables
     }
 
-    var droppers = document.querySelectorAll('.cardPile'),
+    var droppers = document.querySelectorAll('.dropper'),
         droppersLen = droppers.length;
 
     for (var i = 0; i < droppersLen; i++) {
