@@ -36,17 +36,42 @@
                     draggedElement = dndHandler.draggedElement, // Récupération de l'élément concerné
                     clonedElement = draggedElement.cloneNode(true); // On créé immédiatement le clone de cet élément
 
+
+
                 while (target.className.indexOf('dropper') == -1) { // Cette boucle permet de remonter jusqu'à la zone de drop parente
                     target = target.parentNode;
                 }
 
                 target.className = 'dropper'; // Application du style par défaut
 
+                
                 clonedElement = target.appendChild(clonedElement); // Ajout de l'élément cloné à la zone de drop actuelle
+
+
+                var cardId = draggedElement.id;
+                inputHidden=document.createElement("input");
+                inputHidden.type="hidden";
+                inputHidden.name=cardId ;
+                inputHidden.value=cardId ;
+
+
+                var deck = document.getElementById('deck')
+                deck.appendChild(inputHidden);
+                console.log(inputHidden);
+
+
                 dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
 
                 draggedElement.parentNode.removeChild(draggedElement); // Suppression de l'élément d'origine
-                //draggedElement.parentNode.remove();
+                inputHidden.parentNode.removeChild(inputHidden);
+
+
+              //  document.getElementById('toto').removeChild(document.getElementsByTagName('div')
+
+
+
+
+
             });
 
         }

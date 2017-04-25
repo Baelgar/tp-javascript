@@ -67,12 +67,14 @@
 				<div class="col-md-3">
 					<div class="container-fluid">
 						<div class="deck">
-							<h1>Deck Bidule</h1>
-							<input type="text" name="deck_name" placeholder="Nom du deck" class="deckName">
-							<h3>Cartes dans le deck : 0/20</h3>
-							<button type="button" value="save" onclick="localstorage()">Save</button>
+							<form name="deckEditor">
+								<h1>Deck Bidule</h1>
+								<input type="text" name="deck_name" placeholder="Nom du deck" class="deckName">
+								<h3>Cartes dans le deck : 0/20</h3>
+								<button type="button" value="save" onclick="localstorage()">Save</button>
+							</form>
 						</div>
-						<div class="dropper">
+						<div class="dropper" id="deck">
 						</div>
 					</div>
 				</div>
@@ -83,7 +85,5 @@
 	</body>
 
 <script src="js/deckCreator.js"></script>
-<script type="text/javascript">
 
-</script>
 </html>
