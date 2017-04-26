@@ -40,6 +40,7 @@
 
                 while (target.className.indexOf('dropper') == -1) { // Cette boucle permet de remonter jusqu'à la zone de drop parente
                     target = target.parentNode;
+
                 }
 
                 target.className = 'dropper'; // Application du style par défaut
@@ -47,23 +48,30 @@
 
                 clonedElement = target.appendChild(clonedElement); // Ajout de l'élément cloné à la zone de drop actuelle
 
+                if(target.parentNode.parentNode.className == "col-md-3")
+                {
+                  var cardId = draggedElement.id;
+                  inputHidden=document.createElement("input");
+                  inputHidden.type="hidden";
+                  inputHidden.name=cardId ;
+                  inputHidden.value=cardId ;
 
-                var cardId = draggedElement.id;
-                inputHidden=document.createElement("input");
-                inputHidden.type="hidden";
-                inputHidden.name=cardId ;
-                inputHidden.value=cardId ;
+                  var deck = document.getElementById('deck')
+                  deck.appendChild(inputHidden);
+
+                }
+                else if (target.parentNode.parentNode.className == "col-md-9") {
+                  inputHidden.parentNode.removeChild(inputHidden);
+                    console.log(inputHidden);
+                }
 
 
-                var deck = document.getElementById('deck')
-                deck.appendChild(inputHidden);
-                console.log(inputHidden);
 
 
                 dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
 
                 draggedElement.parentNode.removeChild(draggedElement); // Suppression de l'élément d'origine
-    
+
 
 
               //  document.getElementById('toto').removeChild(document.getElementsByTagName('div')
