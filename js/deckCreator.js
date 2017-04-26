@@ -11,7 +11,8 @@
             var dndHandler = this; // Cette variable est nécessaire pour que l'événement « dragstart » ci-dessous accède facilement au namespace « dndHandler »
 
             element.addEventListener('dragstart', function(e) {
-                dndHandler.draggedElement = e.target; // On sauvegarde l'élément en cours de déplacement
+                dndHandler.draggedElement = e.target.parentNode; // On sauvegarde l'élément en cours de déplacement
+
                 e.dataTransfer.setData('text/plain', ''); // Nécessaire pour Firefox
             });
 
@@ -45,40 +46,42 @@
 
                 target.className = 'dropper'; // Application du style par défaut
 
+                var cardId = draggedElement.id; //Récupération de l'id de la carte choisie
+
+              /*  //Création de la div qui contiendra l'image et l'input
+                div = document.createElement('div');
+                div.class = "draggable";
+                div.id = cardId;*/
+
+                var inputHidden=document.createElement("input");
+                inputHidden.type="hidden";
+                inputHidden.name=cardId ;
+                inputHidden.value=cardId;
+                inputHidden.id=cardId;
+
 
                 clonedElement = target.appendChild(clonedElement); // Ajout de l'élément cloné à la zone de drop actuelle
 
+                var key = "input_"+cardId;
+
                 if(target.parentNode.parentNode.className == "col-md-3")
                 {
-                  var cardId = draggedElement.id;
-                  inputHidden=document.createElement("input");
-                  inputHidden.type="hidden";
-                  inputHidden.name=cardId ;
-                  inputHidden.value=cardId ;
+                  draggedElement.remove(); // Suppression de l'élément d'origine
 
-                  var deck = document.getElementById('deck')
-                  deck.appendChild(inputHidden);
+                  
+
+                  var div = document.getElementById(cardId)
+                  div.appendChild(inputHidden);
+
+                  dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
 
                 }
                 else if (target.parentNode.parentNode.className == "col-md-9") {
-                  inputHidden.parentNode.removeChild(inputHidden);
-                    console.log(inputHidden);
+                  dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
+                  var deck = document.getElementById('deck');
+                  draggedElement.parentNode.removeChild(draggedElement); // Suppression de l'élément d'origine
+
                 }
-
-
-
-
-                dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
-
-                draggedElement.parentNode.removeChild(draggedElement); // Suppression de l'élément d'origine
-
-
-
-              //  document.getElementById('toto').removeChild(document.getElementsByTagName('div')
-
-
-
-
 
             });
 
