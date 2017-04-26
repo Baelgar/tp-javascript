@@ -68,8 +68,6 @@
                 {
                   draggedElement.remove(); // Suppression de l'élément d'origine
 
-                  
-
                   var div = document.getElementById(cardId)
                   div.appendChild(inputHidden);
 

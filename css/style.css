@@ -16,13 +16,6 @@ h2{
   cursor: url(/img/pointer.cur), pointer;
 }
 
-.dropper{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	align-content: stretch;
-}
 
 .flex-deck{
 	z-index: 2;
@@ -38,9 +31,22 @@ h2{
 .col-md-3>.container-fluid>.dropper{
 	width: 100%;
 	min-height:395px;
+	height: 159em;
+	max-height: 159em;
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	flex-wrap: wrap;
+	align-content: stretch;
+	overflow:scroll;
 }
 
 .col-md-9>.container-fluid>.dropper{
 	width: 100%;
-	min-height:395px;
+	height: 172em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: stretch;
 }
