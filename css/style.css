@@ -29,6 +29,7 @@ h2{
 }
 
 .col-md-3>.container-fluid>.dropper{
+	background: url(/img/drophere.jpg) no-repeat top;
 	width: 100%;
 	min-height:395px;
 	height: 159em;
