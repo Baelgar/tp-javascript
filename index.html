@@ -66,10 +66,8 @@
 					<div class="container-fluid">
 						<div class="deck">
 							<form name="deckEditor">
-								<h1>Deck Bidule</h1>
-								<input type="text" name="deck_name" placeholder="Nom du deck" class="deckName">
 								<h3>Cartes dans le deck : 0/20</h3>
-								<button type="button" value="save" onclick="localstorage()">Save</button>
+								<input type="text" name="deck_name" placeholder="Nom du deck" class="deckName"><button type="button" value="save" onclick="localstorage()">Save</button>
 							</form>
 						</div>
 						<div class="dropper" id="deck">
@@ -84,7 +82,13 @@
 
 <script src="js/deckCreator.js"></script>
 <script type="text/javascript">
-	localStorage.setItem("deckName", "deck_name");
+	$.getJSON('/js/deckProfile.json')
+						  .done(function() {
+						  })
+						  .always(function(data) {
+	              $('<h1 class="deckName">Deck : ' + data.deckName + '</h3>').insertBefore('form');
+	              $('.deckName').append('<img src="'+ data.deckHero+ '">');
+	            });
 </script>
 
 </html>

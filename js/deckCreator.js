@@ -71,8 +71,6 @@
                   var div = document.getElementById(cardId)
                   div.appendChild(inputHidden);
 
-                  localStorage.setItem(key, clonedElement); //Stockage local de chaque input déposé dans le deck
-
                   dndHandler.applyDragEvents(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
 
                 }
@@ -81,7 +79,6 @@
                   var deck = document.getElementById('deck');
                   draggedElement.parentNode.removeChild(draggedElement); // Suppression de l'élément d'origine
 
-                  localStorage.removeItem(key);
                 }
 
             });
