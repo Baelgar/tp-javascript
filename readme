@@ -14,6 +14,7 @@ Fonctionnalités :
 
 Pas réussi à créer un localstorage correct
 Utilisation du JSON via JQuery
+Problème de suppression de fichiers sur le dépot distant. Seuls les fichiers index.html, css et js sont utilisés avec les images.
 
 
 Retour client :
@@ -24,7 +25,7 @@ Legende :
 
 Vue :
 	  (y) Relativement responsif
-	  /!\ Pas de couleur séparation entre les 2 div (peut etre 2 couleurs pour défférencier les 2 containeurs)	
+	  /!\ Pas de couleur séparation entre les 2 div (peut etre 2 couleurs pour défférencier les 2 containeurs)
 
 Intéractivité :
 
