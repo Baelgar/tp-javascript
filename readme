@@ -1,50 +1,45 @@
 Author : ENFOUX Kévin
 
-Project : HTML5 / CSS3 / JQuery JSON
-
-License : World of Warcraft boss encounters videos
+Project : Javascript / JSON / Jquery (ajax get json)
+License : HEARTHSTONE DECK CREATOR
 Install :
 
 images utilisées dans le cadre du tp.
 
 Fonctionnalités :
-	Accueil :
-		- Slide
-		- Hover sur flexbox + redirection via jquery
-	Raids :
-		- Selection des boss via select + onglets pour chaque difficulté
-		- Bouton pour affichage de la stratégie par appel d'un fichier JSON
+	drag'n'drop des cartes depuis la pile vers le deck et vice-versa.
+	récupération du nom du deck et du héros via JSON
 
-Bugs :
-	Tout le contenu du dropdown passe en .active (heritage du css de la classe .active) lorsqu'on sélection un raid
 
-Pas réussi à remplacer Brand dans le navbar par un logo de wow
+
+Pas réussi à créer un localstorage correct
+Utilisation du JSON via JQuery
 
 
 Retour client :
-Legend : 	(y) --> points positifs
-			/!\ --> points négatifs
-			//** **\\ --> commentaire Kévin
-
---------------------------------------
-
-Responsivité :
-				- (y) La page s'adapte correctement aux différentes tailles
-				- /!\ Le premier article dans la section news empiète sur la navbar   //** Problème corrigé **\\
+Legende :
+			points positifs (y)
+			points negatif  /!\
 
 
-Visuel :
-				- /!\ Seule la page home possède un background (slider) --> les autres pages paraissent délaissées / vides
-				- (y) Le slider s'intègre bien au design du site
-				- /!\ Les images séléctionnées sont pixélisées		//** Pas d'images assez grandes trouvées, j'ai du adapté un peu pour le coup**\\
-				- (y) La page home défini un style qui concorde bien avec le sujet du blog
+Vue :
+	  (y) Relativement responsif
+	  /!\ Pas de couleur séparation entre les 2 div (peut etre 2 couleurs pour défférencier les 2 containeurs)	
 
-Utilisation :
-				- /!\ Page raid scrollable sans contenu			//** Ajout d'une stratégie pour le boss visible en cliquant sur le bouton sous la vidéo **\\
-				- /!\ La page news est lente au chargement sans raison apparente   //** Problème qui semble résolu **\\
+Intéractivité :
+
+	  (y) Drag and drop bidirectionnel  (Commentaire personnel : Super drag and drop)
+	  (y) Repositionnement des cartes pour qu'elles soient toujours en haut de la page
+	  /!\ Le nombre de cartes dans le deck ne se met pas à jour
 
 
-Amélioration :
-				- Controle du slide	--> frustrant quand de devoir attendre une rotation complète quand une image nous intéresse   //** Ajout de points de controle dans la caption**\\
-				- La page raid est bien vide, peut être rajouté une séléction des donjons par tranche de niveaux   //** Ajout d'une stratégie pour le boss visible en cliquant sur le bouton sous la vidéo **\\
-				- Rajouter une déscription des donjons pour remplir un peu  //** Ajout d'une stratégie pour le boss visible en cliquant sur le bouton sous la vidéo **\\
+Améliorations :
+
+				Si possible le double click pour mettre une carte dans le deck ou la retirer
+				Afficher les stats du deck si possible faire un obj deck avec des append par cout en cristaux par exemple)
+				Quand on sauvegarde le deck ça serait cool que le titre affiche le nom du deck
+
+			Et si tu as le temps faire des sorts (cout en cristaux, atk, def)
+
+Bugs :
+				Un seul bug durant mon test	mais très important en dropant 1 à 1 les cartes hors du deck l'affichage s'est cassé et m'a laissé une page blanche

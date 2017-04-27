@@ -65,10 +65,6 @@
 				<div class="col-md-3">
 					<div class="container-fluid">
 						<div class="deck">
-							<form name="deckEditor">
-								<h3>Cartes dans le deck : 0/20</h3>
-								<input type="text" name="deck_name" placeholder="Nom du deck" class="deckName"><button type="button" value="save" onclick="localstorage()">Save</button>
-							</form>
 						</div>
 						<div class="dropper" id="deck">
 						</div>
@@ -82,12 +78,13 @@
 
 <script src="js/deckCreator.js"></script>
 <script type="text/javascript">
+
 	$.getJSON('/js/deckProfile.json')
 						  .done(function() {
 						  })
 						  .always(function(data) {
-	              $('<h1 class="deckName">Deck : ' + data.deckName + '</h3>').insertBefore('form');
-	              $('.deckName').append('<img src="'+ data.deckHero+ '">');
+	              $('.deck').append('<h1 class="deckName">Deck : ' + data.deckName + '</h3>');
+	              $('.deck').append('<img src="'+ data.deckHero+ '">');
 	            });
 </script>
 
